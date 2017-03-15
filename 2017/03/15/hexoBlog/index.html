@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives | Roc&#39;s blog</title>
+  <title>HexoBlog Config | Roc&#39;s blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -170,78 +170,110 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'RE THE WARM <span>SUNSHINE</span> IN MY HEART.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p><font color="white">我若不够勇敢，谁会替我坚强？</font></p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2017/03/15/hexoBlog/">HexoBlog Config</a></h4>
-                            
-                            <p><time datetime="2017-03-15T08:05:52.979Z"><a href="/2017/03/15/hexoBlog/">2017-03-15</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2017/03/01/测试下/">Hello World</a></h4>
-                            
-                            <p><time datetime="2017-03-01T08:23:06.307Z"><a href="/2017/03/01/测试下/">2017-03-01</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-03-15T08:05:52.979Z" itemprop="datePublished">
+          2017-03-15
+      </time>
+    
+</span>
+                <h1>HexoBlog Config</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 style="text-align:center"><strong>HexoBlog</strong></h3>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话会比较和谐^_~。</p>
+<h5 id="前言"><a href="#前言" class="headerlink" title="前言"></a><h4 style="text-align:center"><strong>前言</strong></h4></h5><p>在”黄君”再三吹催促下，我这个懒癌晚期患者只好在晚上顶着被窝的召唤码下这篇渣博。这篇博文主要介绍如何使用Hexo+Github创建自己的个人博客。</p>
+<p><strong>额~~，此处吐槽可以不看</strong>O(∩_∩)O······一开始是这么想来着，既然选择了走写程序这条路，那博客岂能用CSDN、简书之类大众博客？必须自己搭建，这样才能与程序猴子的身份相匹配。后来经过我的深思熟虑，我想我还是说实话吧，其实是为了满足内心装X的欲望(La-da-da-da-dahhh~ U_U)。</p>
+<p>所以考虑到”阿黄”焦急的内心，我抱着同情(略加一点鄙视)的”眼光”，勉为其难的满足了他的要求。</p>
+<p>以上实属码累代码的扯淡，如果你看完了，我的目的就完成了，成功吐槽一波，嘎嘎嘎~。</p>
+<hr>
+<h4 style="text-align:center"><strong>哦豆豆哟，安心西撸，言归正传</strong></h4>
+
+<p>什么是”阿黄”，哦不对，什么是hexo，具体这里就不多做阐述了，感兴趣的可以去<a href="https://hexo.io/docs/" target="_blank" rel="external">官网</a>查看。刚搭建博客的时候准备用jekyll搭建的，毕竟一直有用Github嘛，它推荐jekyll那当然首先是它。之后因为一哥们刚好之前搭建了博客，说jekyll不好，</p>
+<p>我:哪不好</p>
+<p>他:好看的主题不好找！</p>
+<p>我:还有别的么？</p>
+<p>他:没了。</p>
+<p>我:岂有此理，这岂能忍？</p>
+<p>于是我果断换成了Hexo,哎呀不知不觉又吐槽了一波，呆毛能量爆表有木有~</p>
+<p>其实构建微博这事门槛要求不高，前辈们之前写的技术文档随便搜搜就有一大堆，只不过有的因为搭建的时间太长，而hexo与Git一直在不断升级，所以里面的坑还是有的，本人是在<strong>Windows10</strong>环境下配置，废话少说~言归正传。</p>
+<p>苦索，拿拿把西捏!</p>
+<h4 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a><strong>准备环境</strong></h4><ul>
+<li><p>Node.js(4.2.3)</p>
+</li>
+<li><p>Git(2.6.3)</p>
+</li>
+</ul>
+<h5 id="配置Node-js环境"><a href="#配置Node-js环境" class="headerlink" title="配置Node.js环境:"></a><strong>配置Node.js环境:</strong></h5><ul>
+<li><a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x86.msi" target="_blank" rel="external">Windows Installer 32-bit</a></li>
+<li><a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi" target="_blank" rel="external">Windows Installer 64-bit</a></li>
+</ul>
+<p>第一个是32位的系统，第二个是64位的系统，是什么系统自己选择，本人没有尝试过在64的系统上装32位的Node.js(如果真安装的话应该也问题不大)，毕竟本人还是很循规蹈矩个屁的，所以你们需要保持一颗作死的心，又扯远了~咳咳咳。</p>
+<p>安装的话就一路Next就好，这里就不截图了，跟安装QQ一模一样的勒。安装完成后查看下是否安装好,按<strong>win+R</strong>打开运行窗口输入cmd如下图所示:</p>
+<center><img src="https://raw.githubusercontent.com/rocspread/rocspread.github.io/master/img/pic_2.jpg" alt="pic_1"></center>
+
+<p>输入:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">npm -v</div></pre></td></tr></table></figure>
+<p>若显示出当前安装的NodeJs版本信息与与Node包管理器信息就说明安装成功，显示信息如下图所示:</p>
+<center><img src="https://raw.githubusercontent.com/rocspread/rocspread.github.io/master/img/pic_3.jpg" alt="pic_3"></center>
+
+<h5 id="配置Git环境"><a href="#配置Git环境" class="headerlink" title="配置Git环境:"></a><strong>配置Git环境:</strong></h5><p>下载Git安装文件:</p>
+<ul>
+<li><a href="https://github.com/git-for-windows/git/releases/download/v2.6.3.windows.1/Git-2.6.3-64-bit.exe" target="_blank" rel="external">Git-2.6.3-64-bit.exe</a></li>
+<li><a href="https://git-scm.com/downloads" target="_blank" rel="external">Git-2.12.0-bit.exe</a></li>
+</ul>
+<p>配置一样一路next直到下面这一步我们需要将Git-Bash-here与Git-GUI-here勾选上:</p>
+<center><img src="https://raw.githubusercontent.com/rocspread/rocspread.github.io/master/img/pic_4.jpg" alt="pic_4"></center>
+
+<p>下一步选择<strong>Use Git from the windows command prompt</strong>(可以在Windows Command中操作命令)，这一步安装完成之后新建一个文件夹Blogs,右击文件夹找到<strong>Git Bash here</strong>，点击弹出Git输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git --version</div></pre></td></tr></table></figure>
+<center><img src="https://raw.githubusercontent.com/rocspread/rocspread.github.io/master/img/pic_6.jpg" alt="pic_6"></center>
+
+<p>查看Git安装的版本，如果出现上图版本信息则说明安装完成。</p>
+<h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo:"></a><strong>安装hexo:</strong></h4><p>在新建的文件夹Blogs上右键点击<strong>Git Bash Here</strong>进入Git,输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g //安装Hexo</div><div class="line">npm install hexo --save //保存Hexo,如果这个命令无法使用可以尝试修改数据源为taobao的数据源</div></pre></td></tr></table></figure>
+<p>之后初始化hexo:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
+<p>安装插件与依赖:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>安装完成之后，hexo会在你指定的Blogs文件夹里新建所需要的文件，如下图所示:</p>
+<center><img src="https://raw.githubusercontent.com/rocspread/rocspread.github.io/master/img/pic_7.jpg" alt="pic_7"></center>
+
+<p>若完成了上述命令你就可以输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo -g d</div><div class="line">hexo s</div></pre></td></tr></table></figure>
+<p>命令行中显示:</p>
+<center><img src="https://raw.githubusercontent.com/rocspread/rocspread.github.io/master/img/pic_8.jpg" alt="pic_8"></center>
+
+<p>就可以打开浏览器输入:<a href="http://localhost:4000/查看hexo博客界面" target="_blank" rel="external">http://localhost:4000/查看hexo博客界面</a>:</p>
+<center><img src="https://raw.githubusercontent.com/rocspread/rocspread.github.io/master/img/pic_9.jpg" alt="pic_9"></center>
+
+<p>有什么其它需求与问题可以查看Hexo官网:<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a></p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2017/03/01/测试下/">
+        Hello World →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
